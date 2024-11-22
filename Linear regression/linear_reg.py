@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import linear_model
 
-df = pd.read_csv("D:\\python\\program\\ml\\area.csv")
+df = pd.read_csv("workspaces\\ML\\Linear regression\\area.csv")
 # print(df)
 
 plt.xlabel('area')
