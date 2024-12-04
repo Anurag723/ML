@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import linear_model
 
-df = pd.read_csv("workspaces\\ML\\Linear regression\\area.csv")
+df = pd.read_csv("./Linear regression/area.csv")
 # print(df)
 
 plt.xlabel('area')
@@ -27,10 +27,5 @@ plt.plot(df.area,reg.predict(df[['area']]),color='blue')
 
 #``````````````````````````````````````````````upto this part the model is trained````````````````````````````````````````
 
-pre = pd.read_csv('prediction.csv')
+pre = pd.read_csv('./Linear regression/prediction.csv')
 print(pre)
-
-pre['prices'] = reg.predict(pre)
-print(pre)
-
-pre.to_csv('prediction.csv')
