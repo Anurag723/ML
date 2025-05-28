@@ -1,0 +1,10 @@
+a = int(input("Enter the first digit"))
+b = int(input("Enter the second digit"))
+
+print("SUM:",a+b)
+print("quetient:",a//b)
+print("exact division",a/b)
+print("reminder:",a%b)
+print("power:",a**b)
+print("Difference", abs(a-b))
+print("product",a*b)
