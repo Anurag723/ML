@@ -38,11 +38,12 @@ class tree:
                 nn = stack.pop()
                 result.append(nn)
 
+                if nn.right:
+                    stack.append(nn.right)
+
                 if nn.left:
                     stack.append(nn.left)
 
-                if nn.right:
-                    stack.append(nn.right)
 
             return result
         
