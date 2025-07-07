@@ -27,8 +27,8 @@ class binarytree:
 
     def inorder_traversal(self, node):
         if node:
-            self.inorder_traversal(node.left)
             print(node.data, end=' ')
+            self.inorder_traversal(node.left)
             self.inorder_traversal(node.right)
 
 
