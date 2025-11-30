@@ -26,5 +26,9 @@ class Solution:
         # Convert to string
         return ''.join(map(str, result[start:]))
 
+class solution:
+    def multiply(self, num1: str, num2: str) -> str:
+        return str(int(num1)*int(num2))
 
 print(Solution().multiply("5","3"))
+print(solution().multiply("5","3"))
